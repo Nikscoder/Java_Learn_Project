@@ -12,25 +12,24 @@ class BankAccountInstanceVariables {
 public class BankAccount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BankAccountInstanceVariables MyAccount = new BankAccountInstanceVariables(); // constructor new BankAccount() assigned to MyAccount
+        System.out.println("Please write your name: ");
+        String user_input = sc.nextLine();
+
+        BankAccountInstanceVariables MyAccount = new BankAccountInstanceVariables();
         BankAccountInstanceVariables YourAccount = new BankAccountInstanceVariables();
         BankAccountInstanceVariables HisAccount = new BankAccountInstanceVariables();
 
-
         MyAccount.id=1;
-        MyAccount.name="Nikita";
+        MyAccount.name="Name1";
         MyAccount.balance=20.03;
 
         YourAccount.id=2;
-        YourAccount.name="Alex";
+        YourAccount.name="Name2";
         YourAccount.balance=50.20;
 
-        //HisAccount.id=3;
-        //HisAccount.name="Valerii";
-        //HisAccount.balance=11.76;
-
-        System.out.println("Please write your name: ");
-        String user_input = sc.nextLine();
+        HisAccount.id=3;
+        HisAccount.name="Name3";
+        HisAccount.balance=11.76;
 
         if (Objects.equals(user_input, MyAccount.name)){
             System.out.println("ID of user is: " + MyAccount.id + ", Hello user " + MyAccount.name + ", " +
@@ -45,7 +44,6 @@ public class BankAccount {
         }else {
             System.out.println("This customer is not defined!");
         }
-        System.out.println(HisAccount.name);
     }
 
 

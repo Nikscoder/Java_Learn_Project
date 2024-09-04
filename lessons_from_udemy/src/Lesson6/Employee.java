@@ -4,7 +4,7 @@ public class Employee {
 
     //instant variables
     int id;
-    String surname;
+    public String surname;
     int age;
     double salary;
     String department;
@@ -15,7 +15,7 @@ public class Employee {
     }
 
     //constructor for candidates to work wih only surname and age
-    Employee(String surname2, int age2){
+    public Employee(String surname2, int age2){
         this(0, surname2, age2, 0.0, null);
     }
 
